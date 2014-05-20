@@ -2,6 +2,7 @@
     "name":"Lahti",
     "thumbnail":"neue.png",
     "screenshot":"neue.png",
+    "templateType":"menu",
     "pageTypes": ["home", "default", "ecomcheckout"],
     "tags": {
     "en": ["clean", "menu", "ecommerce", "shop"],
