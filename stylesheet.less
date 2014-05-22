@@ -386,7 +386,7 @@ nav {
 .widget {
     &.ecomproductslist {
         .productlist-display-form {
-            float: left;
+            display: inline-block;
             .form-group {
                 margin-bottom: 10px;
                 @media @tablet {
@@ -396,12 +396,6 @@ nav {
             }
         }
         .productlist-item-count {
-            float: right;
-            margin-top: 6px;
-            @media (max-width: 1066px) {
-                float: left;
-                margin-top: 0;
-            }
             @media @tablet {
                 display: block;
                 margin-bottom: 10px;
@@ -463,6 +457,7 @@ nav {
 }
 
 .ecom-productslist-products {
+    margin: 20px 0;
     .btn {
         display: inline-block;
         color: @font-swatch7-color;
