@@ -107,6 +107,9 @@ body.edit { /* border for logo on editor */
     @media @tablet {
         padding: 30px 15px;
     }
+    .fl-left {
+        float: left;
+    }
     .companyname {
         a {
             color: @font-swatch10-color;
@@ -119,11 +122,6 @@ body.edit { /* border for logo on editor */
 
 .widget.logo, .widget.companyname {
     display: inline-block;
-    text-align: left;
-    @media @mobile {
-        display: block;
-        width: 75%;
-    }
 }
 
 .widget.logo img {
@@ -139,29 +137,26 @@ nav {
 
 .widget {
     &.extendednavigation {
-        display: inline-block;
         float: right;
-        padding: 0;
+        max-width: 65%;
         @media @tablet {
             display: block;
             float: none;
+            max-width: 100%;
         }
         .extendednavigation {
-            width: 100%;
+            .clearfix;
         }
         ul {
             @media @tablet {
                 /* Hidden until nav icon is clicked */
                 display: none;
                 /* Then these styles are applied */
-                background-color: lighten(@color-swatch6, 5%);
                 width: 100%;
-                padding-top: 0;
-                position: absolute;
-                top: 45px;
-                z-index: 999;
             }
             li {
+                display: inline-block;
+                float: initial;
                 padding: 8px 10px;
                 @media @tablet {
                     border: none;
@@ -241,7 +236,7 @@ nav {
             display: none;
             @media @tablet {
                 right: 5px;
-                top: -28px;
+                top: 15px;
                 position: absolute;
                 display: inline-block;
                 width: 40px;
@@ -381,37 +376,32 @@ nav {
 
 /* Ecommerce Product List */
 
+.widget.ecomproductslist {
+    @media @tablet {
+        margin-left: -1%;
+        max-width: inherit;
+    }
+}
+
 .widget {
     &.ecomproductslist {
         .productlist-display-form {
-            padding: 12px 0 10px;
-            margin: 10px 0 15px;
-            display: inline-block;
-            float: right;
-            text-align: right;
-            width: 65%;
-            @media @tablet {
-                display: block;
-                margin-left: 0;
-                float: left;
-                text-align: left;
-                width: 100%;
-            }
+            float: left;
             .form-group {
                 margin-bottom: 10px;
                 @media @tablet {
                     margin-bottom: 5px;
                     width: 100%;
                 }
-                &:last-child {
-                    margin-right: 0;
-                }
             }
         }
         .productlist-item-count {
-            display: inline-block;
-            float: left;
-            margin-top: 25px;
+            float: right;
+            margin-top: 6px;
+            @media (max-width: 1066px) {
+                float: left;
+                margin-top: 0;
+            }
             @media @tablet {
                 display: block;
                 margin-bottom: 10px;
@@ -420,16 +410,9 @@ nav {
             }
         }
         .productlist-display-form, .productlist-item-count {
-            margin-left: 3%;
-            @media @tablet {
-                margin-left: 0;
-            }
             div {
-                display: inline-block;
+                float: right;
                 margin-right: 15px;
-                @media @mobile {
-                    display: block;
-                }
                 label {
                     margin-right: 6px;
                     @media @mobile {
