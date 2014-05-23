@@ -1,7 +1,7 @@
 {
     "name":"Lahti",
-    "thumbnail":"neue.png",
-    "screenshot":"neue.png",
+    "thumbnail":"lahti.png",
+    "screenshot":"lahti.png",
     "templateType":"menu",
     "pageTypes": ["home", "default", "ecomcheckout"],
     "tags": {
