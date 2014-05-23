@@ -140,7 +140,6 @@ nav {
         float: right;
         max-width: 65%;
         @media @tablet {
-            display: block;
             float: none;
             max-width: 100%;
         }
@@ -148,6 +147,7 @@ nav {
             .clearfix;
         }
         ul {
+            float: initial; 
             @media @tablet {
                 /* Hidden until nav icon is clicked */
                 display: none;
