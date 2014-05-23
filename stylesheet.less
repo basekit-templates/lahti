@@ -336,16 +336,12 @@ nav {
                 }
             }
             h2, h3 {
-                color: @color-swatch1;
-                text-align:center;
+                text-align: center;
                 @media @tablet {
                     max-width: 100%;
                 }
             }
             h2 {
-                font-family: @font-swatch1-font-family;
-                font-size: @font-swatch1-font-size;
-                line-height: @font-swatch1-line-height;
                 padding: 0 0 5px 0;
                 @media @mobile {
                     font-size: bkscale(@font-swatch1-font-size, 0.85);
@@ -353,8 +349,6 @@ nav {
                 }
             }
             h3 {
-                font-size: @font-swatch5-font-size;
-                line-height: @font-swatch5-line-height;
                 @media @mobile {
                     font-size: bkscale(@font-swatch5-font-size, 0.94);
                 }
@@ -381,6 +375,10 @@ nav {
         margin-left: -1%;
         max-width: inherit;
     }
+}
+
+#productlist-tags {
+    width: initial;
 }
 
 .widget {
@@ -1099,11 +1097,12 @@ button.btn:hover {
         }
     }
     &.blogsearch {
+        margin: 10px 0;
         input {
             border: 1px solid fade(@color-swatch5, 25%);
             height: 45px;
             @media @mobile {
-                width: 50%;
+                width: 100%;
             }
         }
         button {
