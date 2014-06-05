@@ -87,17 +87,6 @@ h5 {
     transition: background-color 0.5s ease;
 }
 
-body.edit { /* border for logo on editor */
-    .widget {
-        &.logo {
-            img {
-                border: 1px dashed red;
-                margin: 0 0 2px;
-            }
-        }
-    }
-}
-
 /* Header */
 
 .bk-header {
@@ -107,8 +96,8 @@ body.edit { /* border for logo on editor */
     @media @tablet {
         padding: 30px 15px;
     }
-    .fl-left {
-        float: left;
+    .name {
+        display: inline-block;
     }
     .companyname {
         a {
@@ -876,6 +865,11 @@ div[role="main"] {
         margin: 0;
         text-align: right;
         width: 49.5%;
+        @media @mobile {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
         span a {
             background-color: fade(@color-swatch6, 15%);
             margin-bottom: 0;
@@ -891,6 +885,11 @@ div[role="main"] {
             padding-top: 18px;
             width: 49.5%;
             vertical-align: top;
+            @media @mobile {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
             p, span {
                 color: lighten(@color-swatch4, 20%);
             }
