@@ -131,6 +131,7 @@ body.edit { /* border for logo on editor */
 
 .widget.logo img {
     margin-right: 10px;
+    vertical-align: baseline;
 }
 
 /* Navigation */
@@ -171,12 +172,10 @@ nav {
                     padding: 12px 25px;
                 }
                 &:hover {
-                    background-color: darken(@font-swatch6-color, 80%);
                     color: @color-swatch1;
                     transition: background-color 0.5s ease;
                     @media @tablet {
                         background-color: darken(@font-swatch6-color, 80%);
-                        color: @color-swatch1
                     }
                     ul {
                         margin: 14px 0 0;
@@ -953,11 +952,11 @@ div[role="main"] {
         }
     }
     .btn-next:before {
-        border-left-color: @color-swatch2;
+        border-left-color: @color-swatch5;
         left: 12px;
     }
     .btn-prev:before {
-        border-right-color: @color-swatch2;
+        border-right-color: @color-swatch5;
         left: 6px;
     }
     .btn-prev {
@@ -1104,7 +1103,7 @@ button.btn:hover {
         form {
             button {
                 position: relative;
-                top: 3px;
+                top: 1px;
             }
             fieldset input {
                 border: 1px solid fade(@color-swatch5, 25%);
