@@ -5,8 +5,8 @@
 {% include 'includes/header.twig' %}
 
 <div class="bk-feature clearfix">
+	{{widget('feature', 'feature-text', {"header": "Lorum ipsum dolor.", "strapline":"Lorum ipsum dolor amet, dolor amet sector.", "buttonText":"Lorum ipsum →", "defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
     {{widget('image', 'feature-image', { 'src': asset('images/feature-bg.jpg'), 'alt': 'my image', 'fileName': 'feature-bg.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '100%'})|raw}}
-    {{widget('feature', 'feature-text', {"header": "Lorum ipsum dolor.", "strapline":"Lorum ipsum dolor amet, dolor amet sector.", "buttonText":"Lorum ipsum →", 'positionTopPercentage': '50','showBtn': true})|raw}}
 </div>
 
 <div role="main">
