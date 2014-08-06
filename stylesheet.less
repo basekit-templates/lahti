@@ -104,30 +104,60 @@ body.edit { /* border for logo on editor */
     background: @color-swatch6;
     padding: 30px;
     width: 100%;
+
+    
+
+
+
     @media @tablet {
         padding: 30px 15px;
+        display: block;
     }
-    .name {
-        display: inline-block;
-        width: 30%;
-        @media @tablet {
-            padding-right: 5%;
-            width: 95%;
-        }
+
+    .wrapper {
+        // Flex parent
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: center;
+
+        max-width: 960px;
+        margin: 0 auto;
+        // padding: 0 30px;
     }
+
+    .logo {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+
+
+ 
+
     .companyname {
-        a {
-            color: @font-swatch10-color;
-            @media @mobile {
-                font-size: bkscale(@font-swatch10-font-size, 0.75) ;
-            }
-        }
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
     }
+
+
+    .extendednavigation {
+        order: 0;
+        flex: 1 1 auto;
+        align-self: auto;
+
+    }
+
+
+
+
+   
 }
 
-.widget.logo, .widget.companyname {
-    display: inline-block;
-}
+
 
 .widget.logo img {
     margin-right: 10px;
@@ -137,20 +167,18 @@ body.edit { /* border for logo on editor */
 /* Navigation */
 
 nav {
-    display: inline-block;
-    float: right;
+    
 }
 
 .widget {
     &.extendednavigation {
-        display: inline-block;
-        float: right;
-        width: 69%;
-        vertical-align: baseline;
+        
+        
         @media @tablet {
-            displaY: block;
+            display: block;
             float: none;
             width: 100%;
+            margin-top: 16px;
         }
         .extendednavigation {
             .clearfix;
@@ -162,14 +190,18 @@ nav {
                 display: none;
                 /* Then these styles are applied */
                 width: 100%;
+                padding: 0;
             }
             li {
                 display: inline-block;
                 float: initial;
-                padding: 8px 10px;
+                padding: 0;
                 @media @tablet {
                     border-bottom: 1px solid fade(@font-swatch6-color, 10%);
-                    padding: 12px 0px 12px 15px;
+                }
+                .text {
+                    display: inline-block;
+                    padding: 8px 14px;
                 }
                 &:hover {
                     color: @color-swatch1;
@@ -183,14 +215,9 @@ nav {
                 }
                 a {
                     color: darken(@font-swatch6-color, 20%);
+                    padding: 0;
                 }
-                &:last-child {
-                    @media @tablet {
-                        border-bottom: none;
-                        border-right: none;
-                        padding-bottom: 20px;
-                    }
-                }
+              
                 &:last-child a {
                 }
                 a, span.text {
@@ -200,15 +227,16 @@ nav {
                     }
                 }
                 &.folder {
-                    margin-right: 0;
-                    padding-right: 20px;
+                   
+                   
                     &:after {
                         border-top-color: fade(@color-swatch1, 25%);
-                        right: 20px;
+                        right: 6px;
                         top: 42%;
                     }
                     span.text {
                         color: darken(@font-swatch6-color, 20%);
+                        padding-right: 30px;
                         &:hover {
                             color: @color-swatch1;
                         }
@@ -219,23 +247,20 @@ nav {
                     ul {
                         background-color: darken(@color-swatch6, 5%);
                         left: 0;
-                        top: 28px;
+                        top: 100%;
+                        margin-top: 0;
                         @media @tablet {
                             li {
                                 border-bottom: 1px solid darken(@color-swatch7, 5%);
                             }
                             background-color: lighten(@color-swatch6, 5%);
-                            top: 36px;
+                            
                             transition: background-color 0.5s ease;
                         }
                         li {
                             border-bottom: 1px solid fade(@color-swatch1, 15%);
-                            padding: 8px 30px 10px 15px;
                             a {
-                                padding: 6px 20px;
-                                @media @tablet {
-                                    padding: 4px 20px;
-                                }
+                               padding: 0;
                             }
                         }
                     }
@@ -246,7 +271,7 @@ nav {
             display: none;
             @media @tablet {
                 right: 5px;
-                top: -30px;
+                top: 0;
                 position: absolute;
                 display: inline-block;
                 width: 40px;
