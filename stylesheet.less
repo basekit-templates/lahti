@@ -130,19 +130,39 @@ body.edit { /* border for logo on editor */
 
     .logo {
         order: 0;
-        flex: 0 1 auto;
-        align-self: auto;
+        flex:0 1 auto;
     }
 
+    .logo.small {
 
+    } 
  
+    .logo.medium {
+        flex:1 1 auto;
+        text-align:center;        
+    }
+
+    .logo.large {
+        flex:1 1 auto;
+        text-align:center;
+    } 
 
     .companyname {
         order: 0;
-        flex: 0 1 auto;
+        flex: 5 5 auto;
         align-self: auto;
     }
 
+    .companyname.small {
+    }
+
+    .companyname.medium {
+        text-align:center;
+    }
+
+    .companyname.large {
+        text-align:center;
+    }
 
     .extendednavigation {
         order: 0;
@@ -151,10 +171,20 @@ body.edit { /* border for logo on editor */
 
     }
 
+    .extendednavigation ul {
+        display:flex;
+        justify-content:center;
+    }
 
-
-
+    .extendednavigation.justify ul {
+        display:flex;
+        justify-content:space-between;   
+    }
    
+    .extendednavigation ul.justify {
+        display:flex;
+        justify-content:space-between;   
+    }
 }
 
 
