@@ -130,55 +130,27 @@ body.edit { /* border for logo on editor */
 
     .logo {
         order: 0;
-        flex:0 1 auto;
-    }
-
-    .logo.small {
-
-    } 
- 
-    .logo.medium {
-        flex:1 1 auto;
-        text-align:center;        
-    }
-
-    .logo.large {
-        flex:1 1 auto;
+        display:flex;
         text-align:center;
-    } 
+        margin:0 auto;
+    }
 
     .companyname {
         order: 0;
-        flex: 5 5 auto;
+        flex:10 10 auto;
         align-self: auto;
-    }
-
-    .companyname.small {
-    }
-
-    .companyname.medium {
-        text-align:center;
-    }
-
-    .companyname.large {
-        text-align:center;
     }
 
     .extendednavigation {
         order: 0;
-        flex: 1 1 auto;
-        align-self: auto;
+        flex:1 1 auto;
+        justify-content:center;
 
     }
 
     .extendednavigation ul {
         display:flex;
-        justify-content:center;
-    }
-
-    .extendednavigation.justify ul {
-        display:flex;
-        justify-content:space-between;   
+        justify-content:space-between;
     }
    
     .extendednavigation ul.justify {
