@@ -136,17 +136,13 @@
 .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation
 {
 	& select {
-		-moz-appearance: none;
 		text-indent: 0.01px;
-		-webkit-appearance: none;
 		text-overflow: '';
 		cursor: pointer;
 		position: relative;
-		background-image: image('/images/ui-select-arrow.png');
 		background-repeat: no-repeat;
 		background-position: right center;
 		margin: 0;
-		padding: 0 64px 0 1em;
 		background-color: @color-swatch1;
 		border: 1px solid fade(@color-swatch5, 25%);
 		color: @color-swatch5;
@@ -163,9 +159,9 @@
 		border-radius: 0;
 
 		// Original styles
-        background: image('/images/arrow-dropdown.png') 95% center no-repeat, -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
-        background: image('/images/arrow-dropdown.png') 95% center no-repeat, -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
-        background: image('/images/arrow-dropdown.png') 95% center no-repeat, linear-gradient(to bottom, white);
+        background: 95% center no-repeat, -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
+        background: 95% center no-repeat, -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
+        background: 95% center no-repeat, linear-gradient(to bottom, white);
 
 		@media only screen and (max-width : 460px) {
 			font-size: bkscale(@font-swatch7-font-size, 0.75);
