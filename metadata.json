@@ -3,7 +3,7 @@
     "thumbnail":"lahti.png",
     "screenshot":"lahti.png",
     "templateType":"menu",
-    "pageTypes": ["home", "default", "ecomcheckout"],
+    "pageTypes": ["home"],
     "tags": {
     "en": ["clean", "menu", "ecommerce", "shop"],
     "es": ["limpio", "menú", "ecommerce", "tienda"],
